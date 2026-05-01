@@ -1,0 +1,24 @@
+// ATM Withdraw Validator
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int amount, Balance=100000;
+    int remaining;
+    cout << "Enter Amount: ";
+    cin >> amount;
+    
+    if(amount <= 0){
+        cout << "invalid amount";
+    } else if(amount > Balance){
+        cout << "insufficient Balance";
+    } else if(amount % 100 != 0){
+        cout << "enter amount in multiplies of 100";
+    } else{
+        remaining = Balance-amount;
+        cout << "Transaction Successful" << endl;
+        cout << "Remaining Amount: " << remaining << endl;
+    }
+    return 0;
+}
