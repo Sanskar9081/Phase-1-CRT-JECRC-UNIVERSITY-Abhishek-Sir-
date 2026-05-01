@@ -1,5 +1,5 @@
 // Problem 6 -- Break Statement
-// we have to add number until until a negative number is entered
+// we have to add number until a negative number is entered
 
 #include<iostream>
 using namespace std;
