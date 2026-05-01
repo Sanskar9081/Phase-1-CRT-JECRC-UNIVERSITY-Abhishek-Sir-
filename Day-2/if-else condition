@@ -1,0 +1,19 @@
+// Problem1 -- if-else condition
+// to verify user
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int age;
+    cin>>age;
+    // if condition
+    if(age >= 18){
+        // logic
+        cout<<"eligible for vote";
+    } else{
+        // logic
+        cout<<"not eligible for vote";
+    }
+    return 0;
+}
