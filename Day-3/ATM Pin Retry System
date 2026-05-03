@@ -1,0 +1,25 @@
+// ATM Pin Retry System
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int correctPIN=2026;
+    int enteredPIN;
+    int attempts=0;
+    
+    while(attempts < 3){
+        cout << "Enter PIN: ";
+        cin >> enteredPIN;
+        
+        if(enteredPIN==correctPIN){
+            cout << "Access Granted";
+            return 0;
+        } else {
+            attempts++;
+            cout << "Wrong PIN. Attempts Left: "<<3-attempts<<endl;
+        }
+    }
+    cout << "Card Blocked";
+    return 0;
+}
