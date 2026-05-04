@@ -1,5 +1,5 @@
 // Problem -- 6
-// Hollow Rectangle
+// Print a Hollow Sphere
 
 #include<iostream>
 using namespace std;
