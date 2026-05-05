@@ -1,0 +1,60 @@
+// Problem -- 4
+// Types of Functions
+// 4.1 -- No argument and no return type
+
+#include<iostream>
+using namespace std;
+
+void DoorBell(){
+    cout << "ting tong..";
+}
+int main(){
+    DoorBell();
+    return 0;
+}
+
+
+
+// 4.2 -- argument, no return type
+
+#include<iostream>
+using namespace std;
+
+void SendText(string message){
+    cout << message;
+}
+int main(){
+    SendText("BJP wons...");
+    return 0;
+}
+
+
+
+// 4.3 -- no argument, return type
+
+#include<iostream>
+using namespace std;
+
+int ticketNumber(){
+    return 101;
+}
+int main(){
+    cout << ticketNumber();
+    return 0;
+}
+
+
+
+// 4.4 -- argument, return type
+
+#include<iostream>
+using namespace std;
+
+int currencyConversion(int amountInUSD){
+    return amountInUSD / 100;
+}
+int main(){
+    cout << currencyConversion(100);
+    return 0;
+}
+
