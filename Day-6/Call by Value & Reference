@@ -1,0 +1,25 @@
+// Problem -- 3
+// call by value // call by Reference
+// call by value -- Photocopy
+// call by Reference -- Original copy(address)
+
+#include <iostream>
+using namespace std;
+
+void updatebyValue(int a){
+    a=500;
+}
+
+void updatebyReference(int &a){
+    a=500;
+}
+
+int main(){
+    int original=100;
+    cout << original << "\n";
+    
+    updatebyValue(original);
+    cout << original << "\n";
+    updatebyReference(original);
+    cout << original;
+}
