@@ -1,0 +1,19 @@
+// Practice Problems -- 7
+// Access Modifiers
+// 7.1 Public class
+
+#include <iostream>
+using namespace std;
+
+class PublicPark {
+public:
+void enter() {
+    cout << "Anyone can enter in the park...";
+    }
+};
+
+int main(){
+    PublicPark p;
+    p.enter();
+}
+
