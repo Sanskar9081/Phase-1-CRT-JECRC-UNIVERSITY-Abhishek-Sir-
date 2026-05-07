@@ -1,0 +1,38 @@
+// Problem -- 3
+// Pillar of OOPS
+// Encapsulation
+// Encapsulation Means we are binding the data into a single unit(Functions, data, variables, methods)
+// into a single unit called class and making restrictions on this class members
+// Data security
+// controlled access over mt Data
+// validation before accessing the Data
+// code maintainability
+
+#include <iostream>
+using namespace std;
+
+class bankAccount {
+private:
+int balance;
+
+public:
+void setBalance(int amount){
+    if(amount>=0){
+        balance=amount;
+    } else {
+        cout <<"Enter a valid number...";
+    }
+}
+
+public:
+int getbalance(){
+    return balance;
+    }
+};
+
+
+int main(){
+    bankAccount obj1;
+    obj1.setBalance(5000);
+    cout << obj1.getbalance();
+}
