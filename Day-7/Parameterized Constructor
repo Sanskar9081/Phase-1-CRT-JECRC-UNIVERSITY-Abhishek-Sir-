@@ -1,0 +1,28 @@
+// 2.2 -- Parameterized Constructor
+
+#include <iostream>
+using namespace std;
+
+class Student {
+    
+public:
+    string name;
+    int id;
+    
+// Constructor
+
+    Student(string studentName, int studentID){
+        name = studentName;
+        id = studentID;
+    }
+    
+public:
+void displayDetails() {
+    cout << name << id;
+}
+};
+
+int main(){
+    Student std1("Sanskar", 101);
+    std1.displayDetails();
+}
