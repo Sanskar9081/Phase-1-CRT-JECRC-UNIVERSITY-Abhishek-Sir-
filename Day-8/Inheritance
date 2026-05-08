@@ -1,0 +1,173 @@
+/* Inheritance -- when a child class processing a complete property of its parent class, then we can say it as Inheritance.
+
+ Types of Inheritance:
+1. Single 
+2. Multilevel
+3. Multiple
+4. Hierarchial
+5. Hybrid
+
+*/
+
+#include <iostream>
+using namespace std;
+
+
+// Problem -- 1
+// Inheritance
+// // Types -- 1.1 Single Inheritance
+
+// class Vehicle {
+// public:
+//     void start(){
+//         cout << "Vehicle Starts" << "\n";
+//     }
+// };
+
+// class Car : public Vehicle {
+// public:
+//     void drive() {
+//         cout << "Car is running" << "\n";
+//     }
+// };
+
+// int main(){
+//     Car obj1;
+//     obj1.drive();
+//     obj1.start();
+// }
+
+
+
+// Types -- 1.1 Multilevel Inheritance
+
+// class Vehicle {
+// public:
+//     void start(){
+//         cout << "Vehicle Starts" << "\n";
+//     }
+// };
+
+// class Car : public Vehicle {
+// public:
+//     void drive() {
+//         cout << "Car is running" << "\n";
+//     }
+// };
+
+// class speedoMeter : public Car {
+// public:
+//     void speed() {
+//         cout << "Car is running at 60km/h";
+//     }
+// };
+
+// int main(){
+//     speedoMeter obj1;
+//     obj1.drive();
+//     obj1.start();
+//     obj1.speed();
+// }
+
+
+
+
+
+// // Hierarchial Inheritance
+
+
+// class Vehicle {
+// public:
+//     void start(){
+//         cout << "Vehicle Starts" << "\n";
+//     }
+// };
+
+// class Car : public Vehicle {
+// public:
+//     void drive() {
+//         cout << "Car is running" << "\n";
+//     }
+// };
+
+// class bike : public Car {
+// public:
+//     void speed() {
+//         cout << "bike is running at 60km/h";
+//     }
+// };
+
+// int main(){
+//     Car obj1;
+//     obj1.start();
+//     obj1.drive();
+    
+//     bike obj2;
+//     obj2.start();
+//     obj2.speed();
+// }
+
+
+
+
+
+// // Multiple Inheritance
+
+
+// class Parent1 {
+// public:
+//     void giveMeMoney(){
+//         cout << "Mummy paisa do mujhe" << "\n";
+//     }
+// };
+
+// class Parent2 {
+// public:
+//     void giveMeMoney() {
+//         cout << "Papa paisa do mujhe" << "\n";
+//     }
+// };
+
+// class child : public Parent1, public Parent2 {
+// // NO LOGIC
+// };
+
+// int main(){
+//     child obj1;
+//     obj1.Parent1::giveMeMoney();
+//     obj1.Parent2::giveMeMoney();
+
+// }
+
+
+
+
+
+
+// Hybrid Inheritance
+
+
+class A {
+public:
+    void print(){
+        cout << "BJP Wons" << "\n";
+    }
+};
+
+class B : virtual public A {
+// NO LOGIC
+};
+
+class C : virtual public A {
+// NO LOGIC
+};
+
+class D : public B, public C {
+// NO LOGIC
+};
+
+int main(){
+    D obj1;
+    obj1.print();
+
+}
