@@ -1,0 +1,108 @@
+// Problem -- 2
+// Polymorphism
+// Polymorphism means one name but many forms
+// same functions behaves differently depending on the type of the object it called 
+// two types
+// Compile time Polymorphism -- Function Overloading -- Static
+// resolved at Compile time
+// Function overloads -- same Function name, but different parameters
+// Faster execution
+// Run time Polymorphism -- Function overriding -- Dynamic
+// Resolved at run time 
+// Function runtime -- same function name, same parameters, but different class
+// uses a virtual keyword in the base class
+// acheiving this through the concept of Inheritance 
+
+#include <iostream>
+using namespace std;
+
+// // Types of Polymorphism -- 2.1 
+// // Function Overloading
+
+// class Math {
+// public:
+
+//     void add(int a, int b) {
+//         cout << a + b << "\n";
+//     }
+
+//     void add(int a, int b, int c) {
+//         cout << a + b + c << "\n";
+//     }
+
+//     void add(double a, double b) {
+//         cout << a + b << "\n";
+//     }
+// };
+
+// int main() {
+
+//     Math m;
+
+//     m.add(5, 2);        // Calls add(int, int)
+//     m.add(5, 5, 5);     // Calls add(int, int, int)
+//     m.add(5.2, 2.2);    // Calls add(double, double)
+
+//     return 0;
+// }
+
+
+
+// // Types of Polymorphism -- 2.1
+// // Function overriding
+
+// class Animal {
+// public:
+//     virtual void sound() {
+//         cout << "Animal makes sound";
+//     }
+// };
+
+
+// class Dog : public Animal {
+// public:    
+//     void sound() override {
+//         cout << "Dog makes a sound" << "\n";
+//     }
+// }; 
+
+// class Cat : public Animal {
+// public:    
+//     void sound() override {
+//         cout << "Cat makes a sound" << "\n";
+//     }
+// }; 
+
+// int main(){
+//     Dog d;
+//     Cat c;
+//     d.sound();
+//     c.sound();
+// }
+
+
+
+// Function overriding
+
+class Parent {
+public:
+    virtual void sum(int a, int b) {
+        cout << a+b << "Parent";
+    }
+};
+
+class child : public Parent {
+public:
+    void sum(int a, int b) override {
+        cout << a+b << "child";
+    }
+};
+
+int main() {
+    child c;
+    c.sum(10, 20);
+}
+
+
+
+
